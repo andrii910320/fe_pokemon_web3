@@ -1,0 +1,48 @@
+.startPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  background: linear-gradient(45deg, var(--card-bg-hover), red);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.startBtn {
+  padding: 20px 40px;
+  font-size: 2rem;
+  color: red;
+  background-color:var(--card-bg-main);
+  border: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  max-width:  250px;
+  margin-top: 2rem;
+}
+
+.startBtn:hover {
+  background-color:var(--card-bg-hover);
+  transform: scale(1.1);
+}
+
+.startBtn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

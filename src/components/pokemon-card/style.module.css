@@ -1,0 +1,161 @@
+.pokemonCard {
+  margin: 0.3rem;
+  position: relative;
+  border: 3px solid #ccc;
+  border-radius: 1rem;
+  padding: 16px;
+  width: 100%;
+  max-height: 400px;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: var(--card-bg-main);
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+.pokemonCard:hover {
+
+  background-color: var( --card-bg-hover);
+  transform: scale(1.05);
+}
+
+.pokemonCard.disabled {
+  pointer-events: none;
+  transform: none;
+}
+.pokemonCard img {
+  max-width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+.icon{
+  margin: 0.1rem;
+
+}
+.heart{
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
+
+.speed{
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.types{
+  font-style: italic;
+}
+.stats{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.5rem;
+  left: 0;
+}
+.textStroke{
+  -webkit-text-stroke: 0.5px black;
+  font-size:2rem;
+}
+
+.startBtn{
+  margin-top: 0.5rem;
+  width: 50%;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+
+}
+.startBtn:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+.divider{
+  font-size: 30px;
+  margin: 0 0.5rem;
+}
+.grass{
+  color: green;
+
+}
+.poison{
+  color: rgb(4, 190, 4);
+}
+.normal{
+  color: black;
+}
+.flying{
+  color: aqua;
+}
+.electric{
+  color: yellow;
+}
+.ground{
+  color: burlywood;
+}
+.bug{
+  color: coral;
+}
+.water{
+  color: blue;
+}
+.fire{
+  color: red;
+}
+.fairy{
+  color: aquamarine;
+}
+.steel{
+  color: gray;
+}
+.ghost{
+  color: white;
+}
+.rock{
+  color: cadetblue;
+}
+.psychic{
+  color: purple;
+}
+.transparent{
+  background-color: transparent;
+  max-width: 120%;
+  height: auto;
+}
+
+@media screen and (max-width:400px) {
+    .textStroke{
+      font-size: 8vw;
+    }
+    .pokemonCard{
+      margin: auto;
+    }
+    .heart, .speed{
+      font-size: 5vw;
+      max-height:20vw;
+      max-width: 20vw;
+    }
+    .stats, .types{
+      font-size: 6vw;
+    }
+}

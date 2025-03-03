@@ -1,0 +1,19 @@
+.pokemonList{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 3rem;
+  background: linear-gradient(45deg, var(--card-bg-hover), red);
+  background-clip: text;
+  color: transparent;
+  margin: 1.5rem 0;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+}
+@media screen and (max-width:400px) {
+  .title{
+    font-size: 10vw;
+  }
+}
