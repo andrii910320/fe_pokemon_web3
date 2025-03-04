@@ -6,7 +6,8 @@ import { fetchNonce } from "../../api/auth/getNonce";
 import { verify } from "../../api/auth/login";
 
 const StartPage = ({ setToken }) => {
-  console.log(process.env.REACT_APP_WS_URL, "env");
+  console.log(process.env.REACT_APP_WS_URL, "REACT_APP_WS_URL");
+  console.log(process.env.REACT_APP_BE_URL, "REACT_APP_BE_URL");
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();

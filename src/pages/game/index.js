@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import InformationOverlay from "../../components/information-overlay";
 
 const Game = () => {
-  
   const WS_URL = process.env.REACT_APP_WS_URL;
   const { messages, lastMessage, sendMessage } = useWebSocket(WS_URL);
   const [isFight, setIsFight] = useState(false);
